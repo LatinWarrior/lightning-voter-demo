@@ -1,13 +1,11 @@
-angular.module('app').directive('sessionDetailWithVotes', function() {
-  return {
+angular.module('app').component('sessionDetailWithVotes', {
     templateUrl: '/sessions/sessionDetailWithVotes.html',
-    scope: {
+    bindings: {
       session: '=',
       initialCollapsed: '@'
     },
     bindToController: true,
-    controllerAs: 'vm',
+    //controllerAs: 'vm',
     controller: function() {
     }
-  }
-})
+});

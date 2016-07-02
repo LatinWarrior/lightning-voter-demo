@@ -8,7 +8,7 @@ angular.module('app').factory('users', function($http, $q) {
       
       $http.get('/api/users').then(function(response) {
         dfd.resolve(response.data);
-      })
+      });
       
       return dfd.promise;
     }

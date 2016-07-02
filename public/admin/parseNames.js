@@ -7,8 +7,8 @@ angular.module('app').factory('parseNames', function() {
         email: pieces[0],
         firstName: pieces[1],
         lastName: pieces[2]
-      }
-    })
+      };
+    });
     return lines;
-  }
-})
+  };
+});
