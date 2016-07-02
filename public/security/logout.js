@@ -1,5 +1,8 @@
-angular.module('app').component('logout', function($location, auth) {
-  auth.logout();
-  
-  $location.path('/login');
+angular.module('app').component('logout', {
+
+    controller: function ($location, auth) {
+        auth.logout();
+
+        $location.path('/login');
+    }
 });

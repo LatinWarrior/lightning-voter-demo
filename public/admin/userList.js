@@ -1,7 +1,7 @@
-angular.module('app').controller('userList', {
+angular.module('app').component('userList', {
     templateUrl: '/admin/userList.html',
     bindings: {
-        users: '=allUsers'
+        allUsers: '='
     },
     controller: function () {
 
