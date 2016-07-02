@@ -3,5 +3,5 @@ angular.module('app').controller('userDetailsCtrl',
   
   this.user = allUsers.find(function(user) {
     return user.id === parseInt($routeParams.id);
-  })
-})
+  });
+});
