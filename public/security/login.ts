@@ -4,7 +4,9 @@ angular.module('app').component('login', {
 
     },
 
-    controller: function($location, currentIdentity, auth, toastr) {
+    controller: class LoginCtrl
+
+        function($location, currentIdentity, auth, toastr) {
 
       if (currentIdentity.authenticated()) {
         $location.path('/home');
